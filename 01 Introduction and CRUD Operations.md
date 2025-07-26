@@ -47,6 +47,7 @@ db.collection.insertMany([doc1, doc2, ...], options)
 ```javascript
 // Insert a single document
 db.studentData.insertOne({ name: "Alice", age: 20 })
+
 // Insert multiple documents
 db.studentData.insertMany([
   { name: "Bob", age: 22 },
