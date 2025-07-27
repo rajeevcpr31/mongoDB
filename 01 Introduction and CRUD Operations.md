@@ -107,6 +107,11 @@ db.studentData.replaceOne(
   { name: "Charlie", age: 23, enrolled: true }
 )
 ```
+
+#### 🆚 updateOne() vs replaceOne()
+- `updateOne()` updates part of a document using update operators like `$set`, `$inc`, `$unset`, etc. Only the specified fields are changed.
+- `replaceOne()` completely replaces the matched document with the new one — all existing fields are removed unless explicitly included in the replacement.
+
 ---
 ## ❌ Delete: Removing Data
 MongoDB supports deleting documents via:
